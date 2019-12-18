@@ -1,0 +1,20 @@
+language: php
+
+sudo: false
+
+cache:
+    directories:
+        - $HOME/.composer/cache
+
+matrix:
+    include:
+        - php: 7.2
+          env: PROPHECY_VERSION="1.9.0"
+        - php: 7.2
+          env: PROPHECY_VERSION="1.10.0"
+
+install:
+    - composer update
+    - composer require phpspec/prophecy $PROPHECY_VERSION
+
+script: vendor/bin/phpunit

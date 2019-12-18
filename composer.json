@@ -1,0 +1,16 @@
+{
+    "name": "ydelange/prophecy-regression",
+    "authors": [
+        {
+            "name": "Yannick de Lange",
+            "email": "ydelange@hostnet.nl"
+        }
+    ],
+    "require": {
+        "phpspec/prophecy": "1.9.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
